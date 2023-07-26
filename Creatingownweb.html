@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <style>
+
+        body {
+            background-image: radial-gradient(to top, #37ecba 0%, #72afd3 100%);
+            color: black;
+            width: 80%;
+            margin: 60px auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            display:block;
+            color: #f95959;
+            border-radius: 4px;
+            border: 1px solid black;
+            font-size: 2em;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            display: block;
+        }
+
+        hr {
+            display: block;
+            margin-block-start: 0.5em;
+            margin-block-end: 0.5em;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+            border-style: inset;
+            border-width: 1px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+            height: auto;
+            aspect-ratio: 1920/1080;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 30px;
+            box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0 ;
+            background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+            border-radius: 10px;
+            color: #fff;
+            width: 50%;
+            display: block;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 20px;
+        }
+
+        .more-info {
+            display:block;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        more-info.hover {
+            text-decoration: underline;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            background: #7d51e8;
+            color: #fff;
+            font-size: 20px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: all;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Fifa Women's World Cup
+        </h1>
+        <h2>
+            My love for women football
+        </h2>
+        <hr>
+        <img 
+        src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blta3c0cc9a16673aae/622b6b242b27320a860f9330/NXGN_2022_Women_s_Header.jpg?auto=webp&format=pjpg&width=1080&quality=60"
+        alt="Women football"
+        widt="200"
+        />
+        <hr>
+        <p>
+            Women may have been playing football for as long as the game has exited. Evidence shows that a similar game (cuju, also known as tsu chu) was played by women during the Han Dynasty (25-220 CE),
+            as female figures are depicted in frescoes of the period playing tsu chu. Annual matches being played in Midlothian, Scotland are reported as early as the 1970s. In 1863, football governing
+            bodies introduced standardized rules to prohibit violence on the pitch, making it more socially acceptable for women to play.
+            <br />
+            <a href="https://en.wikipedia.org/wiki/Women%27s_association_football" target="_blank" class="more-info">
+            More info on Wikipedia
+            </a>
+        </p>
+        <button>
+            Buy Tickets
+        </button>
+        <p class="footer">
+            This page was built by
+            <a href="https://linkedin.com/in/sandra-morgan-nwoley-800672206" target="'_blank">
+                Sandra Morgan Nwoley
+            </a>
+        </p>
+    </div>
+    <script>
+        function purchase(){
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email address?");
+            let team = prompt("Where are you from?");
+
+            alert("Thank you " + name + " for purchasing a ticket." + " Hope " + team + " wins the tornament 😍")
+        }
+        let buyTicket = document.querySelector("button");
+        buyTicket.addEventListener("click", purchase);
+    </script>    
+</body>
+</html>
